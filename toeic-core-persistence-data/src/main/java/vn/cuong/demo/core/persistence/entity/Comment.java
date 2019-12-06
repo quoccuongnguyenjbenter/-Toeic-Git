@@ -17,7 +17,7 @@ public class Comment {
     private User user;
     @ManyToOne
     @JoinColumn(name = "listenguidelineid")
-    private ListenGuideline liseListenGuideline;
+    private ListenGuideline listenGuideline;
 
     public Integer getCommentID() {
         return commentID;
@@ -44,10 +44,10 @@ public class Comment {
     }
 
     public ListenGuideline getLiseListenGuideline() {
-        return liseListenGuideline;
+        return listenGuideline;
     }
 
-    public void setLiseListenGuideline(ListenGuideline liseListenGuideline) {
-        this.liseListenGuideline = liseListenGuideline;
+    public void setLiseListenGuideline(ListenGuideline listenGuideline) {
+        this.listenGuideline = listenGuideline;
     }
 }
