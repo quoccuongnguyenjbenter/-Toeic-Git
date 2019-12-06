@@ -1,4 +1,4 @@
-package cuong.jbenter.common;
+package vn.cuong.demo.common;
 
 public class WebConstant {
 }

@@ -19,18 +19,18 @@
         <module name="toeic-web-logic" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="toeic-core-common" target="1.5" />
-      <module name="toeic-core-dao" target="1.5" />
-      <module name="toeic-core-dao-impl" target="1.5" />
-      <module name="toeic-core-data" target="1.5" />
-      <module name="toeic-core-dto" target="1.5" />
-      <module name="toeic-core-persistence-data" target="1.5" />
-      <module name="toeic-core-service" target="1.5" />
-      <module name="toeic-core-service-impl" target="1.5" />
-      <module name="toeic-core-utils" target="1.5" />
-      <module name="Toeic-Online" target="1.5" />
-      <module name="toeic-web" target="1.5" />
+    <bytecodeTargetLevel target="7">
+      <module name="toeic-core-common" target="7" />
+      <module name="toeic-core-dao" target="7" />
+      <module name="toeic-core-dao-impl" target="7" />
+      <module name="toeic-core-data" target="7" />
+      <module name="toeic-core-dto" target="7" />
+      <module name="toeic-core-persistence-data" target="7" />
+      <module name="toeic-core-service" target="7" />
+      <module name="toeic-core-service-impl" target="7" />
+      <module name="toeic-core-utils" target="7" />
+      <module name="Toeic-Online" target="7" />
+      <module name="toeic-web" target="7" />
       <module name="toeic-web-logic" target="7" />
     </bytecodeTargetLevel>
   </component>
