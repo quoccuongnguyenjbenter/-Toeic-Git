@@ -12,20 +12,20 @@
         <module name="toeic-core-dto" />
         <module name="toeic-core-service" />
         <module name="toeic-core-dao-impl" />
+        <module name="toeic-core-persistence-data" />
         <module name="toeic-core-data" />
         <module name="toeic-web" />
-        <module name="toeic-core-dao" />
         <module name="toeic-web-logic" />
-        <module name="toeic-core-persistence-data" />
+        <module name="toeic-core-dao" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="7">
       <module name="toeic-core-common" target="7" />
       <module name="toeic-core-dao" target="1.5" />
       <module name="toeic-core-dao-impl" target="1.5" />
-      <module name="toeic-core-data" target="1.5" />
+      <module name="toeic-core-data" target="7" />
       <module name="toeic-core-dto" target="1.5" />
-      <module name="toeic-core-persistence-data" target="1.5" />
+      <module name="toeic-core-persistence-data" target="7" />
       <module name="toeic-core-service" target="1.5" />
       <module name="toeic-core-service-impl" target="1.5" />
       <module name="toeic-core-utils" target="1.5" />
