@@ -3,7 +3,6 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>vn.cuong.demo</groupId>
     <artifactId>Toeic-Online</artifactId>
     <packaging>pom</packaging>
@@ -20,13 +19,18 @@
         <module>toeic-web-logic</module>
         <module>toeic-core-persistence-data</module>
         <module>toeic-core-common</module>
+        <module>toeic-core-test</module>
     </modules>
-
     <properties>
         <servlet.api.version>3.1.0</servlet.api.version>
         <jsp.api.version>2.3.1</jsp.api.version>
-        <mysql.connector.version>5.1.31</mysql.connector.version>
-        <hibernate.version>4.3.6.Final</hibernate.version>
+        <mysql.connector.version>8.0.18</mysql.connector.version>
+<!--        <hibernate.version>4.3.6.Final</hibernate.version>-->
+<!--        <hibernate.version>6.0 </hibernate.version>-->
+<!--        <hivernate.version>5.3.7.Final</hivernate.version>-->
+        <testng.version>6.8.7</testng.version>
+        <maven.compiler.source>7</maven.compiler.source>
+        <maven.compiler.target>7</maven.compiler.target>
     </properties>
     <dependencies>
         <dependency>
@@ -47,8 +51,32 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>${hibernate.version}</version>
+<!--            <version>5.3.7.Final</version>-->
+            <version>6.0.0.Alpha2</version>
+<!--            <groupId>org.hibernate</groupId>-->
+<!--            <artifactId>hibernate-core</artifactId>-->
+            <!--suppress UnresolvedMavenProperty -->
+<!--            <version>${hibernate.version}</version>-->
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
-
+<!--    <build>-->
+<!--&lt;!&ndash;        <sourceDirectory>src/main/java</sourceDirectory>&ndash;&gt;-->
+<!--&lt;!&ndash;        <plugins>&ndash;&gt;-->
+<!--&lt;!&ndash;            <plugin>&ndash;&gt;-->
+<!--&lt;!&ndash;                <artifactId>maven-compiler-plugin</artifactId>&ndash;&gt;-->
+<!--&lt;!&ndash;                <version>3.5.1</version>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                <configuration>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                    <source>1.8</source>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                    <target>1.8</target>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                </configuration>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;            </plugin>&ndash;&gt;-->
+<!--&lt;!&ndash;        </plugins>&ndash;&gt;-->
+<!--    </build>-->
 </project>
