@@ -213,6 +213,28 @@ public class AbstractDao<ID extends Serializable, T> implements GenericDao<ID, T
         return new Object[]{totalItem, list};
     }
 
+    @Override
+    public Integer delete(List<ID> ids) {
+        Integer count=0;
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Transaction transaction = session.beginTransaction();
+        try {
+            for (ID item:ids
+                 ) {
+//                T t= (T) session.get(getPersistenceClassName(),item);
+                T t=(T)session.get(persistenceClass, item);
+                session.delete(t);
+                count++;
+            }
+
+            transaction.commit();
+        }catch (HibernateException e){
+            transaction.rollback();
+            throw e;
+        }
+        return count;
+    }
+
 //    @Override
 //    public T save(T entity) {
 //        Session session = HibernateUtil.getSessionFactory().openSession();
