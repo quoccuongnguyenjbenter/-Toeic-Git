@@ -14,6 +14,9 @@
           <element id="module-output" name="toeic-web" />
         </element>
         <element id="directory" name="lib">
+          <element id="archive" name="toeic-web-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="toeic-web" />
+          </element>
           <element id="archive" name="toeic-web-logic-1.0-SNAPSHOT.jar">
             <element id="module-output" name="toeic-web-logic" />
           </element>
