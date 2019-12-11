@@ -13,7 +13,7 @@ public class HomeController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 //        super.doGet(req, resp);
-        RequestDispatcher rd=req.getRequestDispatcher("/views/web/web.jsp");
+        RequestDispatcher rd=req.getRequestDispatcher("/views/web/home.jsp");
         rd.forward(req,resp);
     }
 
